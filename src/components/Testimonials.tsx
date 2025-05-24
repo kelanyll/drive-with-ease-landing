@@ -35,7 +35,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-blue-50">
+    <section className="py-20 bg-gradient-to-br from-green-50 to-teal-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -49,11 +49,11 @@ const Testimonials = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                    <Star key={i} className="w-5 h-5 text-green-400 fill-current" />
                   ))}
                 </div>
                 
@@ -78,11 +78,11 @@ const Testimonials = () => {
               Book your first lesson today and start your journey to becoming a confident driver.
             </p>
             <div className="flex items-center justify-center space-x-4 text-lg">
-              <span className="font-semibold text-blue-600">95% Pass Rate</span>
+              <span className="font-semibold text-orange-600">95% Pass Rate</span>
               <span className="text-gray-400">•</span>
               <span className="font-semibold text-green-600">500+ Students</span>
               <span className="text-gray-400">•</span>
-              <span className="font-semibold text-yellow-600">5-Star Reviews</span>
+              <span className="font-semibold text-pink-600">5-Star Reviews</span>
             </div>
           </div>
         </div>
