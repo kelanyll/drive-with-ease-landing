@@ -3,13 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Phone, Mail, Car } from "lucide-react";
 
 const CallToAction = () => {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact-section');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className="py-20 bg-gradient-to-br from-purple-100 to-pink-100">
       <div className="container mx-auto px-4">
@@ -30,17 +23,12 @@ const CallToAction = () => {
             safe driver with professional instruction.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button 
-              size="lg" 
-              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 text-lg"
-              onClick={scrollToContact}
-            >
-              Book Your First Lesson
-            </Button>
-            <Button size="lg" variant="outline" className="border-orange-300 text-orange-600 hover:bg-orange-50 px-8 py-4 text-lg">
-              Call Now
-            </Button>
+          <div className="mb-12 p-6 bg-white rounded-lg shadow-lg max-w-md mx-auto">
+            <div className="text-center">
+              <p className="text-gray-600 mb-2">Contact Sarah directly:</p>
+              <p className="font-semibold text-gray-900 mb-1">+44 7XXX XXX XXX</p>
+              <p className="text-gray-600">sarah@drivewithjohnson.co.uk</p>
+            </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
@@ -66,14 +54,6 @@ const CallToAction = () => {
                 <span className="font-semibold text-gray-900">Flexible Booking</span>
               </div>
               <p className="text-sm text-gray-600">7 days a week availability</p>
-            </div>
-          </div>
-          
-          <div className="mt-12 p-6 bg-white rounded-lg shadow-lg max-w-md mx-auto">
-            <div className="text-center">
-              <p className="text-gray-600 mb-2">Contact Sarah directly:</p>
-              <p className="font-semibold text-gray-900 mb-1">+44 7XXX XXX XXX</p>
-              <p className="text-gray-600">sarah@drivewithjohnson.co.uk</p>
             </div>
           </div>
         </div>
