@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Star } from "lucide-react";
+import { Star, Image } from "lucide-react";
 
 const Testimonials = () => {
   const testimonials = [
@@ -34,6 +34,33 @@ const Testimonials = () => {
     }
   ];
 
+  const photos = [
+    {
+      id: 1,
+      src: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop",
+      alt: "Student celebrating passing driving test",
+      caption: "Emma celebrating her first-time pass!"
+    },
+    {
+      id: 2,
+      src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop",
+      alt: "Successful driving lesson",
+      caption: "Mike after his successful refresher course"
+    },
+    {
+      id: 3,
+      src: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=300&fit=crop",
+      alt: "Happy student with driving instructor",
+      caption: "Lisa with her test pass certificate"
+    },
+    {
+      id: 4,
+      src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=300&fit=crop",
+      alt: "Driving lesson in progress",
+      caption: "James during his final lesson before the test"
+    }
+  ];
+
   return (
     <section className="py-20 bg-gradient-to-br from-green-50 to-teal-50">
       <div className="container mx-auto px-4">
@@ -47,7 +74,7 @@ const Testimonials = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white">
               <CardContent className="p-6">
@@ -70,8 +97,38 @@ const Testimonials = () => {
             </Card>
           ))}
         </div>
+
+        {/* Photo Gallery Section */}
+        <div className="mb-12">
+          <div className="text-center mb-12">
+            <div className="flex items-center justify-center mb-4">
+              <Image className="w-8 h-8 text-orange-600 mr-3" />
+              <h3 className="text-3xl font-bold text-gray-900">Success Stories in Pictures</h3>
+            </div>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Celebrating our students' achievements and memorable moments from their driving journey.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {photos.map((photo) => (
+              <div key={photo.id} className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <img 
+                  src={photo.src} 
+                  alt={photo.alt}
+                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <p className="text-white text-sm font-medium">{photo.caption}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
         
-        <div className="text-center mt-12">
+        <div className="text-center">
           <div className="bg-white rounded-lg shadow-lg p-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Join Our Success Stories?</h3>
             <p className="text-gray-600 mb-6">
