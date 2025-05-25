@@ -1,6 +1,6 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import profilePic from "@/assets/profile-pic.jpg";
 
 const About = () => {
   const stats = [
@@ -24,7 +24,7 @@ const About = () => {
             </h2>
             
             <p className="text-xl text-gray-600 mb-6">
-              Hi, I'm Sarah Johnson, your local driving instructor with over 10 years of experience 
+              Hi, I'm Safete Vitija, your local driving instructor 
               helping students become confident, safe drivers.
             </p>
             
@@ -54,14 +54,14 @@ const About = () => {
               </div>
             </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-3xl font-bold text-orange-600 mb-1">{stat.number}</div>
                   <div className="text-sm text-gray-600">{stat.label}</div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
           
           <div className="relative">
@@ -69,10 +69,10 @@ const About = () => {
               <CardContent className="p-0">
                 <div className="aspect-[4/3] bg-gradient-to-br from-orange-100 to-pink-200 flex items-center justify-center">
                   <div className="text-center">
-                    <div className="w-32 h-32 bg-orange-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                      <div className="text-4xl">👩‍🏫</div>
+                    <div className="w-64 h-64 bg-orange-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                      <img src={profilePic} alt="Safete Vitija" className="rounded-full object-cover w-full h-full" />
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-800">Sarah Johnson</h3>
+                    <h3 className="text-xl font-semibold text-gray-800">Safete Vitija</h3>
                     <p className="text-gray-600">Certified Driving Instructor</p>
                   </div>
                 </div>

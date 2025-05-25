@@ -25,9 +25,9 @@ const CallToAction = () => {
           
           <div className="mb-12 p-6 bg-white rounded-lg shadow-lg max-w-md mx-auto">
             <div className="text-center">
-              <p className="text-gray-600 mb-2">Contact Sarah directly:</p>
-              <p className="font-semibold text-gray-900 mb-1">+44 7XXX XXX XXX</p>
-              <p className="text-gray-600">sarah@drivewithjohnson.co.uk</p>
+              <p className="text-gray-600 mb-2">Contact Safete directly:</p>
+              <p className="font-semibold text-gray-900 mb-1">+44 7477 549134</p>
+              <p className="text-gray-600">safetevitija@hotmail.com</p>
             </div>
           </div>
           
