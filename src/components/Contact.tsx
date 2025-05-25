@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -7,7 +6,7 @@ import { Phone, Mail, MapPin, Clock, Car } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section className="py-20 bg-gray-900 text-white">
+    <section id="contact-section" className="py-20 bg-gray-900 text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">

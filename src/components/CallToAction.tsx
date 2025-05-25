@@ -3,6 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Phone, Mail, Car } from "lucide-react";
 
 const CallToAction = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact-section');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-20 bg-gradient-to-br from-purple-100 to-pink-100">
       <div className="container mx-auto px-4">
@@ -24,7 +31,11 @@ const CallToAction = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 text-lg">
+            <Button 
+              size="lg" 
+              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 text-lg"
+              onClick={scrollToContact}
+            >
               Book Your First Lesson
             </Button>
             <Button size="lg" variant="outline" className="border-orange-300 text-orange-600 hover:bg-orange-50 px-8 py-4 text-lg">
