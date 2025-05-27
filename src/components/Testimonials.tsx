@@ -6,21 +6,26 @@ import amnorPic from "@/assets/amnor.jpg";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Ertrit Krasniqi",
+      name: "Ertrit",
       text: "Saf is a wonderful teacher who managed to help me pass on the first try! She is very approachable and is able to adapt different teaching styles to help me understand in the best way possible. I recommend Saf to anyone!",
       testDate: "Passed in March 2024",
       photo: ertritPic
     },
+    // {
+    //   name: "Amnor",
+    //   text: "",
+    //   testDate: "Passed in September 2024",
+    //   photo: amnorPic
+    // },
     {
-      name: "Amnor Vitija",
-      text: "",
-      testDate: "Passed in September 2024",
-      photo: amnorPic
-    },
-    {
-      name: "Sameer Rao",
+      name: "Sameer",
       text: "Saf is a super friendly driving instructor. She is a great teacher, was always on time for my lessons and helped me pass my test first time! Thank you Saf 🥳",
       testDate: "Passed in February 2024"
+    },
+    {
+      name: "Qasim",
+      text: "Very friendly and always explained any mistakes I made in an easy to understand way and helped me passed in no time at all.",
+      testDate: "Passed in September 2024"
     }
   ];
 

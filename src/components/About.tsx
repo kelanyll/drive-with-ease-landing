@@ -52,6 +52,19 @@ const About = () => {
                   <p className="text-gray-600">Using the latest techniques and technology to make learning effective and enjoyable.</p>
                 </div>
               </div>
+
+              <div className="flex items-start">
+                <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-4"></div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">Local Area Coverage</h4>
+                  <p className="text-gray-600 mb-3">
+                    I provide driving lessons across Hendon, Mill Hill, Pinner and surrounding areas.
+                  </p>
+                  <p className="text-sm text-gray-500">
+                    Don't see your area? Contact me to discuss coverage in nearby locations.
+                  </p>
+                </div>
+              </div>
             </div>
             
             {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -69,7 +82,7 @@ const About = () => {
               <CardContent className="p-0">
                 <div className="aspect-[4/3] bg-gradient-to-br from-orange-100 to-pink-200 flex items-center justify-center">
                   <div className="text-center">
-                    <div className="w-64 h-64 bg-orange-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 bg-orange-200 rounded-full mx-auto mb-4 flex items-center justify-center">
                       <img src={profilePic} alt="Safete Vitija" className="rounded-full object-cover w-full h-full" />
                     </div>
                     <h3 className="text-xl font-semibold text-gray-800">Safete Vitija</h3>
